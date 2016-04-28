@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<title>warrior academy</title>
+<link type="text/css" rel="stylesheet" href="CSS/Warrior_Academy_Homepage.css"></link>
+<head>
+<div class="header">
+<h1 id="top"><b>The Warrior Academy LLC</b></h1>  
+<h2><strong>Agila Arnis</strong></h2>
+<div>
+    <!--Displays a greeting, different depending on the time of day-->
+    <p><script id="js_greeting">     
+     var today = new Date();
+     var hourNow = today.getHours();
+     var greeting;
+     if (hourNow >= 18) {
+        greeting = 'GOOD EVENING AND WELCOME!';
+    } else if (hourNow >= 12) {
+        greeting = 'GOOD AFTERNOON AND WELCOME!';
+    } else if (hourNow > 0) {
+        greeting = 'GOOD MORNING AND WELCOME!';
+    } else {
+        greeting = 'WELCOME!';
+    }
+    document.getElementById("js_greeting").innerHTML = ('<h3>' + greeting + '</h3>');
+    </script>
+	</p>
+	</div>
+    <!--this JS should display, depending on the day if the location is Open/Closed as well as hours....modify later to display Open/Closed depending on day and time!(JavaScript script should display either open or closed depeding on time of day while viewing site. will run off CST (location)-->
+    <div>
+        <p><script id="open_close">
+function openClosed?() {
+//displays Open or Closed based on business hours for the current day.
+	var currentDay = getUTCDay();
+	var currentHour = getUTCHours();
+	var currentMin = getUTCMinutes();
+	var def1 = display.getElementById("open_close").innerHTML = ("<h1>" + "I'm sorry. This is embarrasing..." + "</h1>");
+	
+	//0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday.
+	
+	if (currentDay == 0 || 2 || 5) {
+		dislay.getElementById("open_close").innerHTML = ("<h1>" + "CLOSED" + "</h1>");
+		// Open Weekdays = Monday, Wednesday, Thursday.
+		} else if (currentDay == 1 || 3 || 4) {
+		// Open weekday hours = 6PM to 9:30PM.
+			if (currentHour >= 18 && <= 22) {
+                if (currentHour <= 21 && currentMin <= 30) {
+                    display.getElementById("open_close").innerHTML = ("<h1>" + "OPEN" + "</h1>");
+                } else {
+                    dislay.getElementById("open_close").innerHTML = ("<h1>" + "CLOSED" + "</h1>");
+                } 
+				} else if (currentDay == 6) {
+				// Saturday hours 11AM to 4PM.
+					if (currentHour >= 11 && <= 16) {
+						display.getElementById("open_close").innerHTML = ("<h1>" + "OPEN" + "</h1>");
+                    } else if {
+                        dislay.getElementById("open_close").innerHTML = ("<h1>" + "CLOSED" + "</h1>");
+                    } else {
+					// should display default error message. 
+						def1;
+						}
+						}
+						}
+			return openClosed?(); // returns end result.
+			};
+
+        </script>
+		</p>
+    </div>
+</div>
+</head>
+<body>
+    <!-- this list should be horizontal and have links to the indicated pages -->
+    <div>
+        <ul>
+            <li><a href="#">Home</a>
+
+            </li>
+            <li><a href="https://en.wikipedia.org/wiki/Arnis">History</a>
+
+            </li>
+            <li><a href="Warrior_Academy_Guru_Small_Bio_Page.html">Bio</a>
+
+            </li>
+            <li><a href="#">Schedule &amp Pricing</a>
+
+            </li>
+            <li><a href="#">Current Students</a>
+
+            </li>
+            <li><a href="#">Pics &amp Vids</a>
+
+            </li>
+        </ul>
+    </div>
+    <div>
+        <img id="pic_left" alt="silouhette arnis fighters" src="http://shirta.de/media/catalog/product/cache/1/small_image/295x295/9df78eab33525d08d6e5fb8d27136e95/s/t/stockkampf-d75254261.png">
+    </div>
+    <div>
+        <img id="pic_right" alt="silouhette arnis fighters" src="http://shirta.de/media/catalog/product/cache/1/small_image/295x295/9df78eab33525d08d6e5fb8d27136e95/s/t/stockkampf-d75254261.png">
+    </div>
+    <div>
+        <figure>
+            <img id="emblem" alt="Company Emblem" width=300 height=300 src="http://api.ning.com/files/.Zv0e1bgizgJGomYb0nkgO59l1*lt3naarst9y22Z7rZa-Q-QVOijxwhL-pc2JxQRbTl7HUPNnSZllzYchWcJVJYoJL4OTejJ/image.jpg?crop=1%3A1&width=171" alt="Photograph of Warrior Acedemy Emblem" />
+        </figure>
+    </div>
+    <p><strong>Located At:</strong>
+
+        <!--links to map, goes to google maps, pin point location-->
+        <div>
+    </p><a href="https://www.google.com/maps/place/1226+N+Jesse+James+Rd,+Excelsior+Springs,+MO+64024/@39.3545009,-94.2350887,16.6z/data=!4m2!3m1!1s0x87c1af625bb37287:0x73da14510d394aa3?hl=en" />1226 N Jesse James Rd Excelsior Springs, MO</a>
+    </div>
+    <p><strong>Contact GURU Small:</strong>
+
+        <!--clicking email should open up mail service compose message to Guru Small-->
+        <div>
+            <p><a href="mailto:robertsmll@yahoo.com">Email: Guru Robert Small</a>
+
+        </div>
+        <p>(816) 630-9816</p>
+        <p><strong>ALSO</strong>
+
+            <!--clicking facebook link should direct to FB page of The Warrior Academy LLC-->
+            <div>
+        </p><a href="https://m.facebook.com/realworldarnis" />Be sure to like us on Facebook</a>
+        </p>
+        </div>
+        <div>
+            <img id="white_pic" alt="black silouhette arnis fighters" src="http://image13.spreadshirt.net/image-server/v1/compositions/27181613/views/1,width=235,height=235,appearanceId=2/Eskrima-|-Doppelstock-|-Shirt.jpg">
+        </div>
+        <div>
+            <img id="black_pic" alt="white silouhette arnis fighters" src="http://shirta.de/media/catalog/product/cache/1/small_image/295x295/9df78eab33525d08d6e5fb8d27136e95/s/t/stickfight-silhouette-d75246064.png">
+        </div>
+        <div>
+            <p id=”info”>The Warrior Academy teaches real world self-defense martial arts in the form of Agila Arnis. Guru Robert Small is the instructor for the classes.</p>
+        </div>
+        <div class="table_Sched">
+            <table>
+                <tr>
+                    <th>Sunday</th>
+                    <th></th>
+                    <th>Monday</th>
+                    <th></th>
+                    <th>Tuesday</th>
+                    <th></th>
+                    <th>Wednesday</th>
+                    <th></th>
+                    <th>Thursday</th>
+                    <th></th>
+                    <th>Friday</th>
+                    <th></th>
+                    <th>Saturday</th>
+                </tr>
+                <tr>
+                    <td>CLOSED</td>
+                    <td></td>
+                    <td>(Designated Classes)</td>
+                    <td></td>
+                    <td>CLOSED</td>
+                    <td></td>
+                    <td>(Designated Classes)</td>
+                    <td></td>
+                    <td>(Designated Classes)</td>
+                    <td></td>
+                    <td>CLOSED</td>
+                    <td></td>
+                    <td>(Open Gym)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>6:00PM-9:30PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>6:00PM-9:30PM</td>
+                    <td></td>
+                    <td>6:00PM-9:30PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>11:00AM-4:00PM</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p><a href="#top">Top</a>
+
+        </div>
+        <div class="footer">
+            </p>
+             <h4>The Warrior Academy LLC</h4>
+
+        </div>
+        <div id="disclaimer">
+            <p><em>***Majority of photos and images used on this site were used as <strong><span>demonstration purposes only</span><strong> via google image searches.***</em>
+
+            </p>
+        </div>
+</body>
+
+</html>
