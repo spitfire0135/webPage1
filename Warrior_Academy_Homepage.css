@@ -1,0 +1,167 @@
+.header {
+    background-image: url('http://www.arnismartialarts.com/wp-content/uploads/2014/01/arnis-sticks.jpg');
+    background-size: 850px 300px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: center;
+    margin: 20px auto 20px auto;
+    z-index: 1;
+}
+h1 {
+    font-family: fantasy;
+    background-color: red;
+    color: black;
+    margin: 20px auto 20px auto;
+    padding: 5px;
+    width: 500px;
+    text-align: center;
+    border-radius: 30px;
+}
+h2 {
+    font-family: fantasy;
+    border: 5px solid red;
+    border-radius: 30px;
+    color: yellow;
+    margin: 20px auto 20px auto;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    background-color: black;
+}
+h3 {
+    color: yellow;
+    border: 5px solid red;
+    border-radius: 30px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    margin-left: 25%;
+    margin: auto auto auto auto;
+    padding: 5px;
+    width: 375px;
+    background-color: black;
+}
+h4 {
+    color: yellow;
+    border: 5px solid red;
+    border-radius: 30px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    margin-left: 50%;
+    margin: auto auto auto auto;
+}
+h5 {
+    color: yellow;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+a:link {
+    color: gold;
+    text-decoration: none;
+}
+a:visited {
+    color: orange;
+}
+a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+a:active {
+    color: gold;
+}
+li {
+    color: yellow;
+    display: inline;
+    margin: 20px auto 20px auto;
+    padding: 5px;
+}
+p {
+    color: yellow;
+}
+body {
+    background-color: black;
+    font-family: fantasy;
+    text-align: center;
+    margin: 20px auto 20px auto;
+}
+.table_Sched {
+    text-align: center;
+    color: yellow;
+    margin: 50px auto 50px auto;
+    padding: 75px;
+    background: linear-gradient(90deg, red, black);
+    border: 3px solid yellow;
+    border-radius: 10px;
+}
+#emblem {
+    border: 2px dashed yellow;
+    margin: 25px;
+    border-radius: 15px;
+}
+#black_pic {
+    border: 3px solid yellow;
+    border-radius: 30px;
+    background-color: white;
+    height: 380px;
+    float: left;
+    clear: left;
+    bottom: 5px;
+    z-index: -1;
+}
+#white_pic {
+    border: 3px solid yellow;
+    border-radius: 30px;
+    height: 380px;
+    background-color: red;
+    float: right;
+    clear: right;
+    bottom: 5px;
+    z-index: -1;
+}
+#pic_left {
+    position: fixed;
+    top: 75px;
+    left: 15px;
+    height: 275px;
+    width: 250px;
+    float: left;
+    opacity: 10%;
+    z-index: -2;
+}
+#pic_right {
+    position: fixed;
+    top: 75px;
+    right: 15px;
+    height: 275px;
+    width: 250px;
+    float: right;
+    opacity: 10%;
+    z-index: -2;
+}
+#info {
+    text-decoration: underline;
+    color: orange;
+    clear: both;
+}
+.footer {
+    text-align: center;
+    margin: auto;
+}
+#disclaimer {
+    color: white;
+    text-decoration: underline;
+}
+div span {
+    color: red;
+    text-decoration: none;
+}
+#bottomEmblem {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    clear: both;
+    position: relative;
+}
